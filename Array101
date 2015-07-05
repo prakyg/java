@@ -1,0 +1,32 @@
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class ArrayBasicsDemo
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		int[] a = new int[] {1,2,3,4,5};
+		System.out.println("a" + a.toString());   //This method will not print array content
+		System.out.println("a" + Arrays.toString(a));
+		
+		int b[] = new int[] {6,7,8,9,0};         //bad syntax but works
+		System.out.println("a" + Arrays.toString(b));
+		
+		int[] c = new int[] {1,3,5,7,9,};       //Noticed the last comma? it is optional
+		System.out.println("a" + Arrays.toString(c));
+		
+	}
+}
+
+/** Output
+*a[I@25154f
+*a[1, 2, 3, 4, 5]
+*a[6, 7, 8, 9, 0]
+*a[1, 3, 5, 7, 9]
+*
+*/
